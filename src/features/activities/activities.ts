@@ -20,6 +20,6 @@ export const runActivities = async (interaction: CommandInteraction) => {
         ephemeral: true
     })
     // @ts-ignore
-    const invite = await (new DiscordTogether(client)).createTogetherCode(member.voice.channel.id, option.value)
+    const invite = await (new DiscordTogether(client)).createTogetherCode(member.voice.channel.id, <string>option.value)
     return interaction.reply({content: `Voici votre code : ${invite.code}`, ephemeral: true})
 }

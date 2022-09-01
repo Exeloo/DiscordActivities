@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WatchTogether.iml" filepath="$PROJECT_DIR$/WatchTogether.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DiscordActivities.iml" filepath="$PROJECT_DIR$/DiscordActivities.iml" />
     </modules>
   </component>
 </project>

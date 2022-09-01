@@ -1,5 +1,5 @@
 {
-  "name": "watch-together",
+  "name": "discord-activities",
   "version": "1.0.0",
   "dependencies": {
     "discord-together": "^1.3.31",
