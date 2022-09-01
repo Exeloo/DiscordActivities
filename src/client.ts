@@ -17,7 +17,7 @@ const login = async () => {
     await client.application?.commands.set([
         {
             type: "CHAT_INPUT",
-            name: "together",
+            name: "activities",
             description: "Init an activity",
             dmPermission: false,
             options: [
