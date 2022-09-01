@@ -1,0 +1,8 @@
+{
+  "name": "watch-together",
+  "version": "1.0.0",
+  "dependencies": {
+    "discord-together": "^1.3.31",
+    "discord.js": "13.10.3"
+  }
+}
