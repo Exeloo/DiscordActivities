@@ -1,11 +1,13 @@
-import {CommandInteraction, GuildMember} from "discord.js";
+import {CommandInteraction} from "discord.js";
 import {DiscordTogether} from "discord-together";
 import {client} from "../../client";
 import {activitiesTypes} from "./activities-types"
 
 export const runActivities = async (interaction: CommandInteraction) => {
-    const member = interaction.member
-    if (!member || !(member instanceof GuildMember)) return
+    if (!interaction.guild) return
+    const guild = await client.guilds.fetch(interaction.guild.id)
+    const member = await guild.members.fetch(<string>interaction.member?.user.id)
+    if (!member) return
     if (!member.voice.channel) return interaction.reply({
         content: "Vous n'êtes pas dans un salon vocal !",
         ephemeral: true
